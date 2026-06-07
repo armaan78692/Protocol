@@ -1,0 +1,29 @@
+#search-bar-div{
+    margin: auto;
+    padding: 20px;
+    
+}
+
+#all-products{
+    margin-top: 20px;
+}
+
+#ctrlk{
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#esc-btn{
+    padding: 5px;
+}
+
+#peptides-icon{
+    padding: 5px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
+}

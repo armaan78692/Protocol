@@ -1,0 +1,43 @@
+#sec-marquee{
+    padding:10px;
+    border: none;
+}
+
+/* ITEM WRAPPER */
+
+.marquee-item{
+    display:flex;
+    align-items:center;
+    gap:32px;
+    padding:0 64px;
+}
+
+/* PYRAMID SPACING */
+
+#symbol-shape{
+    margin-left:28px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* ANIMATION */
+
+@keyframes marquee {
+
+  0%{
+    transform:translateX(0);
+  }
+
+  100%{
+    transform:translateX(-50%);
+  }
+
+}
+
+.animate-marquee{
+  display:flex;
+  width:fit-content;
+  animation:marquee 30s linear infinite;
+  will-change:transform;
+}

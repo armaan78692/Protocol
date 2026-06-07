@@ -1,0 +1,283 @@
+.main-footer {
+  background-color: #9276C2; /* Matches image_77c5f9.png */
+  padding: 60px 0 30px 0;
+  color: #94a3b8;
+  position: relative;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Badges Styles */
+.footer-badges {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 40px;
+}
+
+.badge-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 6px 16px;
+  border-radius: 99px;
+  font-size: 13px;
+  color: #f8fafc;
+}
+
+/* Grid Styles */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 991px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 476px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .brand-desc{
+    max-width:100%;
+  }
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 25px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.logo-icon { color: #38bdf8; }
+.footer-logo .dot { color: #38bdf8; }
+
+.brand-desc {
+  font-size: 14px;
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 320px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #f3f7f7; /* Teal color from image */
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer-col h4 {
+  color: white;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+.footer-col ul { list-style: none; padding: 0; }
+.footer-col ul li { margin-bottom: 12px; }
+.footer-col ul li a {
+  color: #f0f2f4;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.footer-col ul li a:hover { color: white; }
+
+/* Bottom Bar */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #475569;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #10b981;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* SUPPORT WINDOW STYLES */
+.support-window {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  width: 350px;
+  background: #0f172a; /* Deep navy */
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.support-header {
+  background: #875AF1; /* Emerald Green */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.support-header-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-icon-circle {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+}
+
+.support-header h4 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.support-header p {
+  font-size: 12px;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.support-body {
+  padding: 20px;
+}
+
+.survey-question {
+  color: #94a3b8;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.source-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.source-option {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white; /* Teal text */
+  text-align: left;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.source-option:hover {
+  background: rgba(45, 212, 191, 0.08);
+  border-color: #875AF1;
+}
+
+/* Updated Floating Button to match Emerald Green */
+.whatsapp-float {
+  background-color: #875AF1;
+  /* ... keep your other transition/position properties ... */
+}
+
+/* mobile-responsive  */
+
+@media(max-width:640px){
+
+  .whatsapp-float{
+    width:56px;
+    height:56px;
+    bottom:18px;
+    right:18px;
+  }
+
+  .support-window{
+    width:80%;
+    height:auto;
+
+    max-height:75vh;
+
+    bottom:0;
+    right:0;
+
+    border-radius:
+    28px 28px 0 0;
+
+    max-width:100%;
+  }
+
+  .support-header{
+    padding:18px;
+  }
+
+  .support-body{
+    padding:18px;
+  }
+
+  .source-option{
+    height:50px;
+    font-size:14px;
+  }
+
+  .survey-question{
+    font-size:13px;
+  }
+
+}

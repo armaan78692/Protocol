@@ -1,0 +1,169 @@
+
+.testimonial-section {
+    padding: 50px 0;
+    background: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers everything horizontally */
+}
+
+#why-small-tag {
+    display: block;             /* Ensures it takes its own line */
+    text-align: center;         /* Centers the text */
+    color: #64748b;             /* Steel gray color */
+    font-size: 13px;            /* Small, refined size */
+    font-weight: 700;           /* Bold */
+    letter-spacing: 2px;        /* Spaced out like the image */
+    text-transform: uppercase;  /* All caps */
+    margin-bottom: 8px;         /* Space between tag and heading */
+    width: 100%;                /* Full width to allow centering */
+}
+
+#why-main-heading{
+
+    color:#071028;
+
+    font-size:
+    clamp(32px, 8vw, 64px);
+
+    line-height:0.95;
+
+    letter-spacing:-2px;
+
+    font-weight:800;
+
+    max-width:1000px;
+
+    margin:auto;
+
+    text-align:center;
+
+    padding:0 12px;
+
+    word-break:break-word;
+}
+
+/* Ensure the grid doesn't just pull to the left */
+.testimonial-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-cols: 1fr;
+    gap: 24px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#grid-section{
+    margin: 20px;
+}
+
+.testimonial-card {
+    background: #f8fafc; /* Very light gray/blue tint */
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reddit-tag {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: #fff4ed; /* Light orange */
+    color: #ea580c; /* Reddit Orange */
+    padding: 4px 10px;
+    border-radius: 99px;
+    font-size: 11px;
+    font-weight: 700;
+    border: 1px solid #ffedd5;
+}
+
+.testimonial-text {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #475569;
+    margin-top: 10px;
+    flex-grow: 1;
+}
+
+.testimonial-sub {
+    font-size: 12px;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+/* See Field Reports Button */
+.field-report-btn {
+    background: #fbfbfc; /* Deep navy/black */
+    color: rgb(7, 7, 7);
+    border: 1px solid ;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.field-report-btn:hover {
+    background: #ECE2F6;
+    transform: translateY(-2px);
+}
+
+.field-report-btn span {
+    font-size: 18px;
+}
+
+
+/* ---------------disclaimer-section-----------  */
+
+.disclaimer-section {
+  width: 100%;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #ECE2F6;
+}
+
+.disclaimer-container {
+  max-width: 800px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 32px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.disclaimer-title {
+  color: #DF1417;           /* Deep brown title */
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.3px;
+}
+
+.disclaimer-text {
+  color: black;           /* Medium brown text */
+  font-size: 15px;
+  line-height: 1.6;
+  /* margin: 0 0 20px 0; */
+}
+
+/* Mobile adjustments */
+@media (max-width: 640px) {
+  .disclaimer-container {
+    flex-direction: column;
+    padding: 24px;
+  }
+  
+  .disclaimer-title {
+    font-size: 16px;
+  }
+}

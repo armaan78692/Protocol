@@ -1,0 +1,466 @@
+/* =========================
+SECTION
+========================= */
+
+#why-different-section{
+    width:100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:100px 20px;
+}
+
+/* =========================
+HEADING
+========================= */
+
+#why-small-tag{
+    color:#875AF1;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+
+#why-main-heading{
+    color:#071028;
+
+    font-size:clamp(34px,5vw,64px);
+
+    line-height:.95;
+
+    letter-spacing:-2px;
+
+    font-weight:800;
+
+    max-width:1000px;
+
+    margin:auto;
+}
+
+#why-subtext{
+    color:#64748b;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    margin-top:16px;
+}
+
+/* =========================
+GRID
+========================= */
+
+#product-grid{
+
+    margin-top:70px;
+    margin-bottom: -20px;
+    width:100%;
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,380px));
+
+    justify-content:center;
+    align-items: center;
+    gap:24px;
+}
+
+/* =========================
+CARD
+========================= */
+
+.product-card{
+    width:100%;
+    max-width:380px;
+    height: 100%;
+    background:#fff;
+
+    border:1px solid #efe8fb;
+
+    border-radius:28px;
+
+    padding:34px;
+
+    min-height:340px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    border-color .3s ease;
+
+    box-shadow:
+    0 8px 30px rgba(15,23,42,.04);
+}
+
+.product-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#d8c4ff;
+
+    box-shadow:
+    0 20px 50px rgba(135,90,241,.12);
+}
+
+/* top glow */
+
+.product-card::before{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:5px;
+
+    background:
+    linear-gradient(
+      90deg,
+      #875AF1,
+      #B58AFF
+    );
+}
+
+/* =========================
+ICON
+========================= */
+
+.product-icon-box{
+
+    width:62px;
+    height:62px;
+
+    border-radius:18px;
+
+    background:#f4efff;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    transition:.35s ease;
+}
+
+.product-card:hover .product-icon-box{
+    transform:scale(1.08);
+}
+
+/* =========================
+CONTENT
+========================= */
+
+.product-title{
+
+    color:#071028;
+
+    font-size:24px;
+
+    margin-top:24px;
+
+    font-weight:800;
+
+    line-height:1.2;
+}
+
+.product-desc{
+
+    color:#64748b;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    margin-top:14px;
+}
+
+.product-bottom{
+
+    margin-top:28px;
+
+    padding-top:20px;
+
+    border-top:
+    1px solid #f1ecfa;
+}
+
+#item-bottom{
+
+    color:#0f172a;
+
+    font-size:14px;
+
+    font-weight:700;
+}
+
+/* =========================
+STATS SECTION
+========================= */
+
+.stats-section{
+
+    background:
+    linear-gradient(
+      180deg,
+      #9276C2 0%,
+      #dcd1e7 100%
+    );
+
+    padding:70px 20px;
+}
+
+/* CONTAINER */
+
+.stats-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:18px;
+}
+
+/* CARD */
+
+.stat-item{
+
+    position:relative;
+
+    background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.04),
+      rgba(255,255,255,.02)
+    );
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+    border-radius:28px;
+
+    padding:34px 26px;
+
+    overflow:hidden;
+
+    transition:.35s ease;
+
+    backdrop-filter:blur(24px);
+
+    min-height:180px;
+}
+
+/* purple glow */
+
+.stat-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:4px;
+
+    background:
+    linear-gradient(
+      90deg,
+      #875AF1,
+      #B58AFF
+    );
+}
+
+/* hover */
+
+.stat-item:hover{
+
+    transform:translateY(-6px);
+
+    border-color:
+    rgba(135,90,241,.25);
+
+    box-shadow:
+    0 20px 50px
+    rgba(135,90,241,.12);
+}
+
+/* VALUE */
+
+.stat-value{
+
+    color:white;
+
+    font-size:
+    clamp(34px,4vw,56px);
+
+    font-weight:800;
+
+    margin:0;
+
+    line-height:1;
+}
+
+/* LABEL */
+
+.stat-label{
+
+    color:#ffffff;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    margin-top:18px;
+}
+
+/* =========================
+TABLET
+========================= */
+
+@media(max-width:1024px){
+
+    .stats-container{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+        gap:16px;
+    }
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    .stats-section{
+        padding:50px 18px;
+    }
+
+    .stats-container{
+
+        grid-template-columns:1fr;
+
+        gap:14px;
+    }
+
+    .stat-item{
+
+        min-height:auto;
+
+        padding:28px 24px;
+
+        border-radius:22px;
+    }
+
+    .stat-value{
+
+        font-size:48px;
+    }
+
+    .stat-label{
+
+        font-size:11px;
+
+        letter-spacing:2px;
+
+        margin-top:10px;
+    }
+}
+/* =========================
+TABLET
+========================= */
+
+@media(max-width:1024px){
+
+    .stats-container{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    #why-different-section{
+        padding:70px 18px;
+    }
+
+    #why-main-heading{
+        line-height:1;
+        letter-spacing:-1px;
+    }
+
+    #why-subtext{
+        font-size:14px;
+    }
+
+    .product-card{
+        padding:24px;
+        border-radius:22px;
+        min-height:auto;
+    }
+
+    .product-title{
+        font-size:22px;
+    }
+
+    .product-desc{
+        font-size:14px;
+    }
+
+    .stats-container{
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    .stat-item{
+        border-radius:20px;
+        padding:28px;
+    }
+}
+
+@media(max-width:480px){
+
+    #why-main-heading{
+
+        font-size:
+        clamp(34px,9vw,44px);
+
+        line-height:1.92;
+
+        letter-spacing:-2px;
+
+        max-width:95%;
+
+        margin:auto;
+
+        text-align:center;
+
+        word-break:normal;
+
+        text-wrap:balance;
+    }
+}
